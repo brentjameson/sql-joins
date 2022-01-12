@@ -17,6 +17,7 @@ ON o.id = vehicles.owner_id
 GROUP BY o.first_name, o.last_name
 ORDER BY number_of_vehicles;
 
+--3 
 SELECT o.first_name, o.last_name, ROUND(AVG(v.price)) as average_price, count(v.owner_id)
 FROM owners o 
 JOIN vehicles v
